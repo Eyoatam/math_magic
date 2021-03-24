@@ -2,7 +2,7 @@ import {
   assertEquals,
   assertStrictEquals,
 } from "https://deno.land/std@0.91.0/testing/asserts.ts";
-import { Magic } from "../src/math.ts";
+import { Magic } from "../src/magic.ts";
 
 Deno.test("Test compute2Digit method", () => {
   const math = new Magic();
