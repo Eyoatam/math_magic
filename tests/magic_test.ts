@@ -6,14 +6,18 @@ import { Magic } from "../src/magic.ts";
 
 Deno.test("Test compute2Digit method", () => {
   const math = new Magic();
-  assertEquals(math.compute2Digit(5), { computedValue: 4 });
+  assertEquals(math.compute2Digit(5), { computedValue: 4, num: 5 });
   const { computedValue } = math.compute2Digit(6);
   assertStrictEquals(computedValue, 3);
 });
 
 Deno.test("Test compute3Digit method", () => {
   const math = new Magic();
-  assertEquals(math.compute3Digit(2), { firstValue: 9, secondValue: 7 });
+  assertEquals(math.compute3Digit(2), {
+    firstValue: 9,
+    secondValue: 7,
+    num: 2,
+  });
   const { firstValue, secondValue } = math.compute3Digit(4);
   assertStrictEquals(firstValue, 9);
   assertStrictEquals(secondValue, 5);
@@ -21,7 +25,11 @@ Deno.test("Test compute3Digit method", () => {
 
 Deno.test("Test compute4Digit method", () => {
   const math = new Magic();
-  assertEquals(math.compute4Digit(51), { firstValue: 7, secondValue: 5 });
+  assertEquals(math.compute4Digit(51), {
+    firstValue: 7,
+    secondValue: 5,
+    num: 51,
+  });
   const { firstValue, secondValue } = math.compute4Digit(52);
   assertStrictEquals(firstValue, 6);
   assertStrictEquals(secondValue, 5);
@@ -33,6 +41,7 @@ Deno.test("Test for compute5Digit Method", () => {
     firstValue: 9,
     secondValue: 7,
     thirdValue: 4,
+    num: 61,
   });
   const { firstValue, secondValue, thirdValue } = math.compute5Digit(62);
   assertStrictEquals(firstValue, 9);
@@ -46,6 +55,7 @@ Deno.test("Test for compute6Digit method", () => {
     firstValue: 8,
     secondValue: 6,
     thirdValue: 5,
+    num: 530,
   });
   const { firstValue, secondValue, thirdValue } = math.compute6Digit(531);
   assertStrictEquals(firstValue, 7);
