@@ -28,6 +28,10 @@ const { computedValue } = math.compute2Digit(1);
 // computed value will be 8
 ```
 
+```
+deno run https://raw.githubusercontent.com/Eyoatam/math_magic/main/cli.ts --two 1
+```
+
 ## Three digit trick
 
 The second trick, first you take a three digit number, and then subtract the
@@ -45,6 +49,10 @@ const { firstValue, secondValue } = math.compute3Digit(3);
 // and second value will be 6
 ```
 
+```
+deno run https://raw.githubusercontent.com/Eyoatam/math_magic/main/cli.ts --three 3
+```
+
 ## Four digit trick
 
 The rules are the same but now for a four digit number <br/> so you pass in the
@@ -58,6 +66,10 @@ const math = new Magic();
 const { firstValue, secondValue } = math.compute4Digit(51);
 // firstValue will be 7
 // and second value will be 5
+```
+
+```
+deno run https://raw.githubusercontent.com/Eyoatam/math_magic/main/cli.ts --four 51
 ```
 
 ## Five digit trick
@@ -76,6 +88,10 @@ const { firstValue, secondValue, thirdValue } = math.compute4Digit(41);
 // and thirdValue will be 6
 ```
 
+```
+deno run https://raw.githubusercontent.com/Eyoatam/math_magic/main/cli.ts --five 41
+```
+
 ## Six digit trick
 
 Here the rules are the same but now it's a six digit number <br/> so you pass in
@@ -92,6 +108,10 @@ const { firstValue, secondValue, thirdValue } = math.compute4Digit(530);
 // firstValue will be 8
 // secondValue will be 6
 // and thirdValue will be 5
+```
+
+```
+deno run https://raw.githubusercontent.com/Eyoatam/math_magic/main/cli.ts --six 530
 ```
 
 ## License

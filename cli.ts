@@ -1,5 +1,3 @@
-#!/usr/bin/env -S deno run --allow-read
-
 import { parse } from "https://deno.land/std@0.91.0/flags/mod.ts";
 import { brightGreen, green } from "https://deno.land/std@0.91.0/fmt/colors.ts";
 import { Magic } from "./src/magic.ts";
