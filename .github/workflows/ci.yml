@@ -42,11 +42,9 @@ jobs:
         run: deno test --coverage=./cov --unstable
 
       - name: Generate lcov
-        if: matrix.deno == 'canary'
         run: deno coverage --unstable --lcov ./cov > cov.lcov
 
       - name: Upload coverage
-        if: matrix.deno == 'canary'
         uses: codecov/codecov-action@v1
         with:
           name: ${{ matrix.os }}-${{ matrix.deno }}
