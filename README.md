@@ -6,14 +6,16 @@
 
 ## Two digit trick
 
-The first trick, first you take a two digit number and the numbers should be in descending format <br/>
-for example `24` is not valid because 2 is greater than 4 but `42` is valid because 3 is greater than 2 <br/>
+The first trick, first you take a two digit number and the numbers should be in
+descending format <br/> for example `24` is not valid because 2 is greater than
+4 but `42` is valid because 3 is greater than 2 <br/>
 
 > these rules also apply to all of the rest tricks
 
-then you subtract the inverse of the number example if the number is `42` then you subtract `24`. <br/>
-now if you pass in the first number to the `compute2Digit` Method you get the second number.<br/>
-example: if you subtract `24` from `42` you get 18 so if you pass in 1 you will get 8 or vice versa.
+then you subtract the inverse of the number example if the number is `42` then
+you subtract `24`. <br/> now if you pass in the first number to the
+`compute2Digit` Method you get the second number.<br/> example: if you subtract
+`24` from `42` you get 18 so if you pass in 1 you will get 8 or vice versa.
 
 ```ts
 import { Magic } from "https://raw.githubusercontent.com/Eyoatam/math_magic/main/src/math.ts";
@@ -26,9 +28,10 @@ const { computedValue } = math.compute2Digit(1);
 
 ## Three digit trick
 
-The second trick, first you take a three digit number, and then subtract the inverse of the number you got <br/>
-example: if the number is `531`, you subtract `135` and you get `396`. Then if you pass in 3 to the `compute3Digit` Method <br/>
-you get `9` and `6`.
+The second trick, first you take a three digit number, and then subtract the
+inverse of the number you got <br/> example: if the number is `531`, you
+subtract `135` and you get `396`. Then if you pass in 3 to the `compute3Digit`
+Method <br/> you get `9` and `6`.
 
 ```ts
 import { Magic } from "https://raw.githubusercontent.com/Eyoatam/math_magic/main/src/math.ts";
@@ -42,9 +45,8 @@ const { firstValue, secondValue } = math.compute3Digit(3);
 
 ## Four digit trick
 
-The rules are the same but now for a four digit number <br/>
-so you pass in the first two numbers and you get the rest <br/>
-example:
+The rules are the same but now for a four digit number <br/> so you pass in the
+first two numbers and you get the rest <br/> example:
 
 ```ts
 import { Magic } from "https://raw.githubusercontent.com/Eyoatam/math_magic/main/src/math.ts";
@@ -74,8 +76,8 @@ const { firstValue, secondValue, thirdValue } = math.compute4Digit(41);
 
 ## Six digit trick
 
-Here the rules are the same but now it's a six digit number <br/>
-so you pass in the first three numbers and you get the rest <br/>
+Here the rules are the same but now it's a six digit number <br/> so you pass in
+the first three numbers and you get the rest <br/>
 
 example:
 
