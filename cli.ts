@@ -27,11 +27,11 @@ if (typeof parsedArgs.two === "number") {
 
 if (typeof parsedArgs.three === "number") {
   const { firstValue, secondValue, num } = math.compute3Digit(
-    +parsedArgs.three
+    +parsedArgs.three,
   );
   console.log(
     "Your number is " +
-      green(num + firstValue.toString() + secondValue.toString())
+      green(num + firstValue.toString() + secondValue.toString()),
   );
 } else if (parsedArgs.three && typeof parsedArgs.three !== "number") {
   const number = prompt(brightGreen("? ") + "The first number:");
@@ -39,7 +39,7 @@ if (typeof parsedArgs.three === "number") {
     const { firstValue, secondValue, num } = math.compute3Digit(+number);
     console.log(
       "Your number is " +
-        green(num + firstValue.toString() + secondValue.toString())
+        green(num + firstValue.toString() + secondValue.toString()),
     );
   }
 }
@@ -48,7 +48,7 @@ if (typeof parsedArgs.four === "number") {
   const { firstValue, secondValue, num } = math.compute4Digit(+parsedArgs.four);
   console.log(
     "Your number is " +
-      green(num + firstValue.toString() + secondValue.toString())
+      green(num + firstValue.toString() + secondValue.toString()),
   );
 } else if (parsedArgs.four && typeof parsedArgs.four !== "number") {
   const number = prompt(brightGreen("? ") + " The first two numbers:");
@@ -56,14 +56,14 @@ if (typeof parsedArgs.four === "number") {
     const { firstValue, secondValue, num } = math.compute4Digit(+number);
     console.log(
       "Your number is " +
-        green(num + firstValue.toString() + secondValue.toString())
+        green(num + firstValue.toString() + secondValue.toString()),
     );
   }
 }
 
 if (typeof parsedArgs.five === "number") {
   const { firstValue, secondValue, thirdValue, num } = math.compute5Digit(
-    +parsedArgs.five
+    +parsedArgs.five,
   );
   console.log(
     "Your number is " +
@@ -71,14 +71,14 @@ if (typeof parsedArgs.five === "number") {
         num +
           firstValue.toString() +
           secondValue.toString() +
-          thirdValue.toString()
-      )
+          thirdValue.toString(),
+      ),
   );
 } else if (parsedArgs.five && typeof parsedArgs.five !== "number") {
   const number = prompt(brightGreen("? ") + " The first two numbers:");
   if (number) {
     const { firstValue, secondValue, thirdValue, num } = math.compute5Digit(
-      +number
+      +number,
     );
     console.log(
       "Your number is " +
@@ -86,15 +86,15 @@ if (typeof parsedArgs.five === "number") {
           num +
             firstValue.toString() +
             secondValue.toString() +
-            thirdValue.toString()
-        )
+            thirdValue.toString(),
+        ),
     );
   }
 }
 
 if (typeof parsedArgs.six === "number") {
   const { firstValue, secondValue, thirdValue, num } = math.compute6Digit(
-    +parsedArgs.six
+    +parsedArgs.six,
   );
   console.log(
     "Your number is " +
@@ -102,14 +102,14 @@ if (typeof parsedArgs.six === "number") {
         num +
           firstValue.toString() +
           secondValue.toString() +
-          thirdValue.toString()
-      )
+          thirdValue.toString(),
+      ),
   );
 } else if (parsedArgs.six && typeof parsedArgs.six !== "number") {
   const number = prompt(brightGreen("? ") + " The first three numbers:");
   if (number) {
     const { firstValue, secondValue, thirdValue, num } = math.compute6Digit(
-      +number
+      +number,
     );
     console.log(
       "Your number is " +
@@ -117,8 +117,8 @@ if (typeof parsedArgs.six === "number") {
           num +
             firstValue.toString() +
             secondValue.toString() +
-            thirdValue.toString()
-        )
+            thirdValue.toString(),
+        ),
     );
   }
 }
