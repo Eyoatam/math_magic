@@ -5,7 +5,9 @@ const parsedArgs = parse(Deno.args);
 
 if (parsedArgs.help || parsedArgs.h || parsedArgs.length === 0) {
   console.log(`
-    Flags: --two [number] - compute two digit number
+  Usage: cli.ts --option [number]
+
+  options: --two [number] - compute two digit number
            --three [number] - compute three digit number
            --four [number] -  compute four digit number
            --five [number] - compute five digit number
