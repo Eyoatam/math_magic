@@ -114,6 +114,12 @@ const { firstValue, secondValue, thirdValue } = math.compute4Digit(530);
 deno run https://raw.githubusercontent.com/Eyoatam/math_magic/main/cli.ts --six 530
 ```
 
+## Contributing
+
+before opening a pull request make sure that `deno fmt --check` passes for
+further information read the
+[Contributing Guidelines](https://github.com/Eyoatam/math_magic/blob/main/CONTRIBUTING.md)
+
 ## License
 
 [MIT](https://github.com/Eyoatam/math_magic/blob/main/LICENSE)
