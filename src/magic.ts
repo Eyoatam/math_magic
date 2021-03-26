@@ -8,7 +8,7 @@ export class Magic {
   }
 
   compute3Digit(
-    num: number,
+    num: number
   ): { firstValue: number; secondValue: number; num: number } {
     const firstValue = 9;
     const secondValue = firstValue - num;
@@ -20,11 +20,12 @@ export class Magic {
   }
 
   compute4Digit(
-    num: number,
+    num: number
   ): { firstValue: number; secondValue: number; num: number } {
     const splitNum = num.toString().split("");
-    const firstValue = 8 - +splitNum[1];
-    const secondValue = 10 - +splitNum[0];
+    const [num1, num2] = splitNum;
+    const firstValue = 8 - +num2;
+    const secondValue = 10 - +num1;
     return {
       firstValue,
       secondValue,
@@ -33,7 +34,7 @@ export class Magic {
   }
 
   compute5Digit(
-    num: number,
+    num: number
   ): {
     firstValue: number;
     secondValue: number;
@@ -41,9 +42,10 @@ export class Magic {
     num: number;
   } {
     const splitNum = num.toString().split("");
+    const [num1, num2] = splitNum;
     const firstValue = 9;
-    const secondValue = 8 - +splitNum[1];
-    const thirdValue = 10 - +splitNum[0];
+    const secondValue = 8 - +num2;
+    const thirdValue = 10 - +num1;
     return {
       firstValue,
       secondValue,
@@ -53,7 +55,7 @@ export class Magic {
   }
 
   compute6Digit(
-    num: number,
+    num: number
   ): {
     firstValue: number;
     secondValue: number;
@@ -61,9 +63,10 @@ export class Magic {
     num: number;
   } {
     const splitNum = num.toString().split("");
-    const firstValue = 8 - +splitNum[2];
-    const secondValue = 9 - +splitNum[1];
-    const thirdValue = 10 - +splitNum[0];
+    const [num1, num2, num3] = splitNum;
+    const firstValue = 8 - +num3;
+    const secondValue = 9 - +num2;
+    const thirdValue = 10 - +num1;
     return {
       firstValue,
       secondValue,
