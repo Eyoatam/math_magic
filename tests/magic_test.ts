@@ -35,7 +35,7 @@ Deno.test("Test compute4Digit method", () => {
   assertStrictEquals(secondValue, 5);
 });
 
-Deno.test("Test for compute5Digit Method", () => {
+Deno.test("Test compute5Digit Method", () => {
   const math = new Magic();
   assertEquals(math.compute5Digit(61), {
     firstValue: 9,
@@ -49,7 +49,7 @@ Deno.test("Test for compute5Digit Method", () => {
   assertStrictEquals(thirdValue, 4);
 });
 
-Deno.test("Test for compute6Digit method", () => {
+Deno.test("Test compute6Digit method", () => {
   const math = new Magic();
   assertEquals(math.compute6Digit(530), {
     firstValue: 8,
@@ -61,4 +61,70 @@ Deno.test("Test for compute6Digit method", () => {
   assertStrictEquals(firstValue, 7);
   assertStrictEquals(secondValue, 6);
   assertStrictEquals(thirdValue, 5);
+});
+
+Deno.test("Test compute7Digit Method", () => {
+  const math = new Magic();
+  assertEquals(math.compute7Digit(641), {
+    firstValue: 9,
+    secondValue: 7,
+    thirdValue: 5,
+    fourthValue: 4,
+    num: 641,
+  });
+  const {
+    firstValue,
+    secondValue,
+    thirdValue,
+    fourthValue,
+  } = math.compute7Digit(642);
+  assertStrictEquals(firstValue, 9);
+  assertStrictEquals(secondValue, 6);
+  assertStrictEquals(thirdValue, 5);
+  assertStrictEquals(fourthValue, 4);
+});
+
+Deno.test("Test compute8Digit Method", () => {
+  const math = new Magic();
+  assertEquals(math.compute8Digit(7530), {
+    firstValue: 8,
+    secondValue: 6,
+    thirdValue: 4,
+    fourthValue: 3,
+    num: 7530,
+  });
+  const {
+    firstValue,
+    secondValue,
+    thirdValue,
+    fourthValue,
+  } = math.compute8Digit(7531);
+  assertStrictEquals(firstValue, 7);
+  assertStrictEquals(secondValue, 6);
+  assertStrictEquals(thirdValue, 4);
+  assertStrictEquals(fourthValue, 3);
+});
+
+Deno.test("Test compute9DigitMethod", () => {
+  const math = new Magic();
+  assertEquals(math.compute9Digit(8641), {
+    firstValue: 9,
+    secondValue: 7,
+    thirdValue: 5,
+    fourthValue: 3,
+    fifthValue: 2,
+    num: 8641,
+  });
+  const {
+    firstValue,
+    secondValue,
+    thirdValue,
+    fourthValue,
+    fifthValue,
+  } = math.compute9Digit(8451);
+  assertStrictEquals(firstValue, 9);
+  assertStrictEquals(secondValue, 7);
+  assertStrictEquals(thirdValue, 4);
+  assertStrictEquals(fourthValue, 5);
+  assertStrictEquals(fifthValue, 2);
 });
