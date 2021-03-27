@@ -114,6 +114,71 @@ const { firstValue, secondValue, thirdValue } = math.compute4Digit(530);
 deno run https://raw.githubusercontent.com/Eyoatam/math_magic/main/cli.ts --six 530
 ```
 
+## Seven digit trick
+
+```ts
+import { Magic } from "https://raw.githubusercontent.com/Eyoatam/math_magic/main/src/math.ts";
+const math = new Magic();
+// 7654321 - 1234567 = 6419754
+// now pass in the first three numbers (641)
+const { firstValue, secondValue, thirdValue, fourthValue } = math.compute4Digit(
+	641
+);
+// firstValue will be 9
+// secondValue will be 7
+// thirdValue will be 5
+// and fourthValue will be 4
+```
+
+```
+deno run https://raw.githubusercontent.com/Eyoatam/math_magic/main/cli.ts --seven 641
+```
+
+## Eight digit trick
+
+```ts
+import { Magic } from "https://raw.githubusercontent.com/Eyoatam/math_magic/main/src/math.ts";
+const math = new Magic();
+// 87654321 - 12345678 = 75308643
+// now pass in the first four numbers (7530)
+const { firstValue, secondValue, thirdValue, fourthValue } = math.compute4Digit(
+	7530
+);
+// firstValue will be 8
+// secondValue will be 6
+// thirdValue will be 4
+// and fourthValue will be 3
+```
+
+```
+deno run https://raw.githubusercontent.com/Eyoatam/math_magic/main/cli.ts --eight 7530
+```
+
+## Nine digit trick
+
+```ts
+import { Magic } from "https://raw.githubusercontent.com/Eyoatam/math_magic/main/src/math.ts";
+const math = new Magic();
+// 987654321 - 123456789 = 864197532
+// now pass in the first four numbers (8641)
+const {
+	firstValue,
+	secondValue,
+	thirdValue,
+	fourthValue,
+	fifthValue,
+} = math.compute4Digit(8641);
+// firstValue will be 9
+// secondValue will be 7
+// thirdValue will be 5
+// fourthValue will be 3
+// and fifthValue will be 2
+```
+
+```
+deno run https://raw.githubusercontent.com/Eyoatam/math_magic/main/cli.ts --nine 8641
+```
+
 ## Contributing
 
 before opening a pull request make sure that `deno fmt --check` passes for
