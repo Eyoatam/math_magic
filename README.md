@@ -181,9 +181,12 @@ deno run https://raw.githubusercontent.com/Eyoatam/math_magic/main/cli.ts --nine
 
 ## Contributing
 
-before opening a pull request make sure that `deno fmt --check` passes for
-further information read the
-[Contributing Guidelines](https://github.com/Eyoatam/math_magic/blob/main/CONTRIBUTING.md)
+## Contributing
+
+before opening a pr check that `deno fmt --check` passes
+
+For further information you can read the
+[Contribiting guidelines](https://github.com/Eyoatam/deno_progress/blob/main/CONTRIBUTING.md)
 
 ## License
 
