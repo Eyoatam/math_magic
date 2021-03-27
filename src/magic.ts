@@ -8,7 +8,7 @@ export class Magic {
   }
 
   compute3Digit(
-    num: number,
+    num: number
   ): { firstValue: number; secondValue: number; num: number } {
     const firstValue = 9;
     const secondValue = firstValue - num;
@@ -20,7 +20,7 @@ export class Magic {
   }
 
   compute4Digit(
-    num: number,
+    num: number
   ): { firstValue: number; secondValue: number; num: number } {
     const splitNum = num.toString().split("");
     const [num1, num2] = splitNum;
@@ -34,7 +34,7 @@ export class Magic {
   }
 
   compute5Digit(
-    num: number,
+    num: number
   ): {
     firstValue: number;
     secondValue: number;
@@ -55,7 +55,7 @@ export class Magic {
   }
 
   compute6Digit(
-    num: number,
+    num: number
   ): {
     firstValue: number;
     secondValue: number;
@@ -71,6 +71,81 @@ export class Magic {
       firstValue,
       secondValue,
       thirdValue,
+      num,
+    };
+  }
+
+  compute7Digit(
+    num: number
+  ): {
+    firstValue: number;
+    secondValue: number;
+    thirdValue: number;
+    fourthValue: number;
+    num: number;
+  } {
+    const splitNum = num.toString().split("");
+    const [num1, num2, num3] = splitNum;
+    const firstValue = 9;
+    const secondValue = 8 - +num3;
+    const thirdValue = 9 - +num2;
+    const fourthValue = 10 - +num1;
+    return {
+      firstValue,
+      secondValue,
+      thirdValue,
+      fourthValue,
+      num,
+    };
+  }
+
+  compute8Digit(
+    num: number
+  ): {
+    firstValue: number;
+    secondValue: number;
+    thirdValue: number;
+    fourthValue: number;
+    num: number;
+  } {
+    const splitNum = num.toString().split("");
+    const [num1, num2, num3, num4] = splitNum;
+    const firstValue = 8 - +num4;
+    const secondValue = 9 - +num3;
+    const thirdValue = 9 - +num2;
+    const fourthValue = 10 - +num1;
+    return {
+      firstValue,
+      secondValue,
+      thirdValue,
+      fourthValue,
+      num,
+    };
+  }
+
+  compute9Digit(
+    num: number
+  ): {
+    firstValue: number;
+    secondValue: number;
+    thirdValue: number;
+    fourthValue: number;
+    fifthValue: number;
+    num: number;
+  } {
+    const splitNum = num.toString().split("");
+    const [num1, num2, num3, num4] = splitNum;
+    const firstValue = 9;
+    const secondValue = 8 - +num4;
+    const thirdValue = 9 - +num3;
+    const fourthValue = 9 - +num2;
+    const fifthValue = 10 - +num1;
+    return {
+      firstValue,
+      secondValue,
+      thirdValue,
+      fourthValue,
+      fifthValue,
       num,
     };
   }
