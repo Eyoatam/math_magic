@@ -3,6 +3,8 @@ import { brightGreen, green } from "https://deno.land/std@0.91.0/fmt/colors.ts";
 import { Magic } from "./src/magic.ts";
 const parsedArgs = parse(Deno.args);
 
+// TODO(Eyoatam): improve cli
+
 if (parsedArgs.help || parsedArgs.h || parsedArgs.length === 0) {
   console.log(`
   Usage: cli.ts --option [number]
