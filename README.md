@@ -122,7 +122,7 @@ const math = new Magic();
 // 7654321 - 1234567 = 6419754
 // now pass in the first three numbers (641)
 const { firstValue, secondValue, thirdValue, fourthValue } = math.compute4Digit(
-	641
+  641,
 );
 // firstValue will be 9
 // secondValue will be 7
@@ -142,7 +142,7 @@ const math = new Magic();
 // 87654321 - 12345678 = 75308643
 // now pass in the first four numbers (7530)
 const { firstValue, secondValue, thirdValue, fourthValue } = math.compute4Digit(
-	7530
+  7530,
 );
 // firstValue will be 8
 // secondValue will be 6
@@ -162,11 +162,11 @@ const math = new Magic();
 // 987654321 - 123456789 = 864197532
 // now pass in the first four numbers (8641)
 const {
-	firstValue,
-	secondValue,
-	thirdValue,
-	fourthValue,
-	fifthValue,
+  firstValue,
+  secondValue,
+  thirdValue,
+  fourthValue,
+  fifthValue,
 } = math.compute4Digit(8641);
 // firstValue will be 9
 // secondValue will be 7
