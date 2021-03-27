@@ -181,8 +181,6 @@ deno run https://raw.githubusercontent.com/Eyoatam/math_magic/main/cli.ts --nine
 
 ## Contributing
 
-## Contributing
-
 before opening a pr check that `deno fmt --check` passes
 
 For further information you can read the
