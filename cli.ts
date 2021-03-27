@@ -124,3 +124,130 @@ if (typeof parsedArgs.six === "number") {
     );
   }
 }
+
+if (typeof parsedArgs.seven === "number") {
+  const {
+    firstValue,
+    secondValue,
+    thirdValue,
+    fourthValue,
+    num,
+  } = math.compute7Digit(+parsedArgs.seven);
+  console.log(
+    "Your number is " +
+      green(
+        num +
+          firstValue.toString() +
+          secondValue.toString() +
+          thirdValue.toString() +
+          fourthValue.toString(),
+      ),
+  );
+} else if (parsedArgs.seven && typeof parsedArgs.seven !== "number") {
+  const number = prompt(brightGreen("? ") + " The first three numbers:");
+  if (number) {
+    const {
+      firstValue,
+      secondValue,
+      thirdValue,
+      fourthValue,
+      num,
+    } = math.compute7Digit(+number);
+    console.log(
+      "Your number is " +
+        green(
+          num +
+            firstValue.toString() +
+            secondValue.toString() +
+            thirdValue.toString() +
+            fourthValue.toString(),
+        ),
+    );
+  }
+}
+
+if (typeof parsedArgs.eight === "number") {
+  const {
+    firstValue,
+    secondValue,
+    thirdValue,
+    fourthValue,
+    num,
+  } = math.compute8Digit(+parsedArgs.eight);
+  console.log(
+    "Your number is " +
+      green(
+        num +
+          firstValue.toString() +
+          secondValue.toString() +
+          thirdValue.toString() +
+          fourthValue.toString(),
+      ),
+  );
+} else if (parsedArgs.eight && typeof parsedArgs.eight !== "number") {
+  const number = prompt(brightGreen("? ") + " The first three numbers:");
+  if (number) {
+    const {
+      firstValue,
+      secondValue,
+      thirdValue,
+      fourthValue,
+      num,
+    } = math.compute8Digit(+number);
+    console.log(
+      "Your number is " +
+        green(
+          num +
+            firstValue.toString() +
+            secondValue.toString() +
+            thirdValue.toString() +
+            fourthValue.toString(),
+        ),
+    );
+  }
+}
+
+if (typeof parsedArgs.nine === "number") {
+  const {
+    firstValue,
+    secondValue,
+    thirdValue,
+    fourthValue,
+    fifthValue,
+    num,
+  } = math.compute9Digit(+parsedArgs.nine);
+  console.log(
+    "Your number is " +
+      green(
+        num +
+          firstValue.toString() +
+          secondValue.toString() +
+          thirdValue.toString() +
+          fourthValue.toString() +
+          fifthValue.toString(),
+      ),
+  );
+} else if (parsedArgs.nine && typeof parsedArgs.nine !== "number") {
+  const number = prompt(brightGreen("? ") + " The first three numbers:");
+  if (number) {
+    const {
+      firstValue,
+      secondValue,
+      thirdValue,
+      fourthValue,
+      fifthValue,
+      num,
+    } = math.compute9Digit(+number);
+    console.log(
+      "Your number is " +
+        green(
+          num +
+            firstValue.toString() +
+            secondValue.toString() +
+            thirdValue.toString() +
+            fourthValue.toString() +
+            fifthValue.toString(),
+        ),
+    );
+  }
+}
