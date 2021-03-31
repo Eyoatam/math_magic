@@ -3,6 +3,7 @@
 [![ci](https://github.com/Eyoatam/math_magic/actions/workflows/ci.yml/badge.svg)](https://github.com/Eyoatam/math_magic/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/eyoatam/math_magic/branch/main/graph/badge.svg?token=w6s3ODtULz)](https://codecov.io/gh/eyoatam/math_magic)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Eyoatam/math_magic/blob/main/LICENSE)
+<a href="https://doc.deno.land/https/raw.githubusercontent.com/Eyoatam/math_magic/main/typedef/magic.d.ts"><img src="https://doc.deno.land/badge.svg"></a>
 
 > This repo contains some code of me playing around with math and deno
 
