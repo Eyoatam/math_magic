@@ -1,9 +1,11 @@
-# math_magic
+<h1 align="center">math_magic</h1>
 
-[![ci](https://github.com/Eyoatam/math_magic/actions/workflows/ci.yml/badge.svg)](https://github.com/Eyoatam/math_magic/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/eyoatam/math_magic/branch/main/graph/badge.svg?token=w6s3ODtULz)](https://codecov.io/gh/eyoatam/math_magic)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Eyoatam/math_magic/blob/main/LICENSE)
-<a href="https://doc.deno.land/https/raw.githubusercontent.com/Eyoatam/math_magic/main/typedef/magic.d.ts"><img src="https://doc.deno.land/badge.svg"></a>
+<p align="center">
+<img src="https://github.com/Eyoatam/math_magic/workflows/ci/badge.svg">
+<a href="https://doc.deno.land/https/raw.githubusercontent.com/Eyoatam/math_magic/main/types/magic.d.ts"><img src="https://doc.deno.land/badge.svg"></a>
+<a href="https://codecov.io/gh/eyoatam/math_magic"><img src="https://codecov.io/gh/eyoatam/math_magic/branch/main/graph/badge.svg?token=w6s3ODtULz"></a>
+<img src="https://img.shields.io/badge/license-MIT-blue.svg">
+</p>
 
 > This repo contains some code of me playing around with math and deno
 
